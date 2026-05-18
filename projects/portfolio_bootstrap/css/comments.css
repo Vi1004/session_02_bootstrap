@@ -1,0 +1,32 @@
+/* CSS chuẩn theo Design Specs của đề bài */
+.comment img.rounded-circle {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.comment.reply img.rounded-circle {
+    width: 40px;
+    height: 40px;
+}
+
+/* Reply Indentation - Đường kẻ thụt lề cho phản hồi */
+.comment.reply {
+    border-left: 3px solid #e2e8f0;
+    padding-left: 1rem;
+}
+
+/* Comment Action Button */
+.btn-link {
+    color: #0d6efd; /* Tương đương var(--bs-primary) */
+    text-decoration: none;
+}
+
+.btn-link:hover {
+    color: #0a58ca; /* Tương đương mức độ màu tối hơn 10% */
+}
+
+/* Nested Reply Spacing từ mục Hints */
+.comment.reply.ms-5 {
+    margin-left: 3rem;
+}

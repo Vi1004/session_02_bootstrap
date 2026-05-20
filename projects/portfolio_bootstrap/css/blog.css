@@ -1,5 +1,6 @@
-/* EXERCISE 2.2: BLOG LAYOUT DESIGN SPECS     */
-/* Cấu hình các hộp bài viết bo tròn, có bóng mờ*/
+/* EXERCISE 2.2: BLOG LAYOUT DESIGN SPECS */
+
+/* Hộp bài viết bo tròn, bóng mờ */
 .card {
     border: none !important;
     box-shadow: 0 2px 15px rgba(0,0,0,0.08);
@@ -7,52 +8,15 @@
     overflow: hidden;
 }
 
-/* Cấu hình ghim dính Sidebar khi cuộn trang */
+/* Ghim dính Sidebar khi cuộn trang */
 .sticky-top {
     position: sticky;
     top: 100px;
     z-index: 1;
 }
 
-/* Ép các ảnh bài viết đều tăm tắp bằng nhau */
+/* Ép ảnh các bài viết đều nhau */
 .blog-img {
     height: 300px;
     object-fit: cover;
-}
-
-/* ========================================== */
-/* EXERCISE 2.3: COMMENTS CUSTOM DESIGN SPECS */
-/* ========================================== */
-
-/* Kích thước avatar bình luận cha */
-.comment img.rounded-circle {
-    width: 50px !important;
-    height: 50px !important;
-    object-fit: cover;
-}
-
-/* Kích thước avatar câu trả lời con */
-.comment.reply img.rounded-circle {
-    width: 40px !important;
-    height: 40px !important;
-}
-
-/* Đường kẻ thụt lề màu xám cho câu trả lời tinh tế */
-.comment.reply {
-    border-left: 3px solid #e2e8f0;
-    padding-left: 1rem;
-}
-
-/* Định dạng màu sắc nút Reply */
-.btn-link {
-    color: #0d6efd !important;
-    text-decoration: none !important;
-}
-.btn-link:hover {
-    color: #0a58ca !important;
-}
-
-/* Khoảng cách thụt lề chuẩn cho bình luận con (3rem theo mục Hints) */
-.comment.reply.ms-5 {
-    margin-left: 3rem !important;
 }

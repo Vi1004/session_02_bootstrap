@@ -1,32 +1,34 @@
-/* CSS chuẩn theo Design Specs của đề bài */
+/* EXERCISE 2.3: COMMENTS CUSTOM DESIGN SPECS */
+
+/* Kích thước avatar bình luận cha */
 .comment img.rounded-circle {
-    width: 50px;
-    height: 50px;
+    width: 50px !important;
+    height: 50px !important;
     object-fit: cover;
 }
 
+/* Kích thước avatar câu trả lời con */
 .comment.reply img.rounded-circle {
-    width: 40px;
-    height: 40px;
+    width: 40px !important;
+    height: 40px !important;
 }
 
-/* Reply Indentation - Đường kẻ thụt lề cho phản hồi */
+/* Đường kẻ thụt lề màu xám cho câu trả lời tinh tế */
 .comment.reply {
     border-left: 3px solid #e2e8f0;
     padding-left: 1rem;
 }
 
-/* Comment Action Button */
+/* Định dạng màu sắc nút Reply */
 .btn-link {
-    color: #0d6efd; /* Tương đương var(--bs-primary) */
-    text-decoration: none;
+    color: #0d6efd !important;
+    text-decoration: none !important;
 }
-
 .btn-link:hover {
-    color: #0a58ca; /* Tương đương mức độ màu tối hơn 10% */
+    color: #0a58ca !important;
 }
 
-/* Nested Reply Spacing từ mục Hints */
+/* Khoảng cách thụt lề chuẩn cho bình luận con (3rem) */
 .comment.reply.ms-5 {
-    margin-left: 3rem;
+    margin-left: 3rem !important;
 }

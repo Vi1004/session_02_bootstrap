@@ -1,0 +1,51 @@
+/* 3. Tùy biến chi tiết cấu trúc Components theo Design Specs */
+
+/* Cập nhật trạng thái hiển thị của các nút bấm Primary */
+.btn-primary {
+    background-color: var(--bs-primary) !important;
+    border-color: var(--bs-primary) !important;
+    border-radius: 8px !important; /* Tròn vừa phải */
+    color: #ffffff !important;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+}
+.btn-primary:hover, .btn-primary:focus {
+    background-color: var(--bs-primary-hover) !important;
+    border-color: var(--bs-primary-hover) !important;
+}
+
+/* Các thành phần bổ trợ như Viền ngoài nút */
+.btn-outline-primary {
+    color: var(--bs-primary) !important;
+    border-color: var(--bs-primary) !important;
+    border-radius: 8px !important;
+}
+.btn-outline-primary:hover {
+    background-color: var(--bs-primary) !important;
+    border-color: var(--bs-primary) !important;
+    color: #ffffff !important;
+}
+
+/* Bo tròn nâng cao cho các thẻ Card và đổ bóng mịn màng */
+.card {
+    border: none !important;
+    border-radius: 16px !important; /* Tăng độ bo tròn theo yêu cầu */
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.05) !important; /* Đổ bóng Slate nhẹ */
+    background-color: #ffffff;
+}
+
+/* Tăng độ bo cho các ô nhập liệu Form input */
+.form-control {
+    border-radius: 10px !important;
+    border: 1px solid #e2e8f0;
+}
+.form-control:focus {
+    border-color: var(--bs-primary);
+    box-shadow: 0 0 0 0.25rem rgba(20, 184, 166, 0.25);
+}
+
+/* Lớp đệm khoảng cách tùy biến */
+.py-section {
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+}
